@@ -39,7 +39,7 @@ def clean(data):
 url = "https://github.com/ChidiNdego/nd00333-capstone/blob/master/starter_file/loan_default_prediction.csv"
 data = TabularDatasetFactory.from_delimited_files(url)
 
-x, y = clean_data(data)
+x, y = clean(data)
 
 # split data into train and test sets.
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state = 0, shuffle=True)
