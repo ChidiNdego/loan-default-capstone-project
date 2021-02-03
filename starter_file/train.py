@@ -11,6 +11,8 @@ from azureml.core.run import Run
 from azureml.data.dataset_factory import TabularDatasetFactory
 from azureml.core import Dataset
 
+run = Run.get_context()
+
 def clean(data):
     # clean and one-hot encode data
     
@@ -36,7 +38,7 @@ def clean(data):
 
 
 # load dataset
-url = "https://github.com/ChidiNdego/nd00333-capstone/blob/master/starter_file/loan_default_prediction.csv"
+url = "https://raw.githubusercontent.com/ChidiNdego/loan-default-capstone-project/master/starter_file/loan_default_prediction.csv"
 data = TabularDatasetFactory.from_delimited_files(url)
 
 x, y = clean(data)
