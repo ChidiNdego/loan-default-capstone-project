@@ -1,22 +1,23 @@
 from sklearn.linear_model import LogisticRegression
-import argparse
-import os
-import numpy as np
 from sklearn.metrics import mean_squared_error
-import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder
-import pandas as pd
+
 from azureml.core.run import Run
 from azureml.data.dataset_factory import TabularDatasetFactory
 from azureml.core import Dataset
 
-run = Run.get_context()
+import argparse
+import os
+import joblib
+import pandas as pd
+import numpy as np
+
 
 def clean(data):
     # clean and one-hot encode data
     
-    data = data.to_pandas_dataframe()
+    data = data.to_pandas_dataframe().dropna()
 
     # imputing missing values
     data['incomeVerified'].fillna(False,inplace=True)
