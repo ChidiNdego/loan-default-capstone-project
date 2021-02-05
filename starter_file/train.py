@@ -17,7 +17,7 @@ import numpy as np
 def clean(data):
     # clean and one-hot encode data
     
-    data = data.to_pandas_dataframe().dropna()
+    data = data.to_pandas_dataframe()
 
     # imputing missing values
     data['incomeVerified'].fillna(False,inplace=True)
@@ -31,7 +31,7 @@ def clean(data):
     cat_df = ['clientGender','clientMaritalStatus', 'clientLoanPurpose','clientResidentialStauts','incomeVerified']
     data = pd.get_dummies(data,columns=cat_df,drop_first=True)
 
-    data.drop(['loanId','dueDate','clientTimeAtEmployer','loanTerm','clientId'],axis=1,inplace=True)
+    data.drop(['loanId','dueDate','clientTimeAtEmployer','loanTerm','clientId','clientState'],axis=1,inplace=True)
     x_df = data.copy()
     y_df = x_df.pop("loanDefault")
 
