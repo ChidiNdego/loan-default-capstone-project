@@ -212,17 +212,17 @@ Here is a [screencast](https://youtu.be/VS_oyPOgB64) of this project showing key
 
 ### ONNX Model Conversion
 
-![ONNX Framework](Images/onnx_01.PNG)
+![ONNX Framework](Images/onnx.png)
 *figure 14: How ONNX works*
 
 ONNX, Open Neural Network Exchange is an open-source portability platform for models that allow you to convert models from one framework to another, say, TensorFlow or Caffe, or even to deploy models to a device such as an iOS or Android mobile device.
 It can also help to optimize the inference of your machine learning model. Inference, or model scoring, is the phase where the deployed model is used for prediction, most commonly on production data.
 
-![ONNX Model Conversion 01](Images/onnx.png)
-*figure 14: ONNX model conversion 01*
+![ONNX Model Conversion 01](Images/onnx_01.PNG)
+*figure 15: ONNX model conversion 01*
 
 ![ONNX Model Conversion 02](Images/onnx_02.PNG)
-*figure 15: ONNX model conversion 02*
+*figure 16: ONNX model conversion 02*
 
 ### Enable Logging
 Logging is a core pillar of MLOps. It gives information on how deployed models are behaving over time. Enabling application insight helps to fulfil this purpose. Detection of anomalies, performance visualization, and log retrieval can be done using the Python SDK.
@@ -230,17 +230,17 @@ Logging is a core pillar of MLOps. It gives information on how deployed models a
 Update the Log script with the deployed model name and pass in `service.update(enable_app_insights=True)` before executing the log script as seen below:
 
 ![Running Log Script](Images/log_output.PNG)
-*figure 16: running log script to enable logging*
+*figure 17: running log script to enable logging*
 
 Confirm application is enabled from azure ml studio:
 
 ![Application Insight Enabled](Images/app_insight_enabled.PNG)
-*figure 17: application insight enabled*
+*figure 18: application insight enabled*
 
 Click the application insight url to see charts proving that logging has been enabled:
 
 ![Application Insight Visuals](Images/app_insight_enabled_02.PNG)
-*figure 18: application insight visuals*
+*figure 19: application insight visuals*
 
 
 ## References
