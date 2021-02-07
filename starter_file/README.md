@@ -211,10 +211,14 @@ Here is a [screencast](https://youtu.be/VS_oyPOgB64) of this project showing key
 ## Standout Suggestions
 
 ### ONNX Model Conversion
+
+![ONNX Framework](Images/onnx_01.PNG)
+*figure 14: How ONNX works*
+
 ONNX, Open Neural Network Exchange is an open-source portability platform for models that allow you to convert models from one framework to another, say, TensorFlow or Caffe, or even to deploy models to a device such as an iOS or Android mobile device.
 It can also help to optimize the inference of your machine learning model. Inference, or model scoring, is the phase where the deployed model is used for prediction, most commonly on production data.
 
-![ONNX Model Conversion 01](Images/onnx_01.PNG)
+![ONNX Model Conversion 01](Images/onnx.png)
 *figure 14: ONNX model conversion 01*
 
 ![ONNX Model Conversion 02](Images/onnx_02.PNG)
@@ -238,4 +242,12 @@ Click the application insight url to see charts proving that logging has been en
 ![Application Insight Visuals](Images/app_insight_enabled_02.PNG)
 *figure 18: application insight visuals*
 
-### The End
+
+## References
+
+*   [TabularDataset Class](https://docs.microsoft.com/en-us/python/api/azureml-core/azureml.data.tabulardataset?view=azure-ml-py#to-pandas-dataframe-on-error--null---out-of-range-datetime--null--)
+*   [Hyperparameter tuning a model with Azure Machine Learning](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters)
+*   [AutoML with Microsoft Azure](https://docs.microsoft.com/en-us/azure/machine-learning/concept-automated-ml)
+*   [Voting Ensembles with Python](https://machinelearningmastery.com/voting-ensembles-with-python/)
+*   [Ensemble Learning in Machine Learning](https://towardsdatascience.com/ensemble-learning-in-machine-learning-getting-started-4ed85eb38e00)
+*   [ONNX Model Conversion](https://docs.microsoft.com/en-us/azure/machine-learning/concept-onnx)
