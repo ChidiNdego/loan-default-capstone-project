@@ -2,6 +2,9 @@
 
 This is the last of three projects required for the fulfilment of the Microsoft Azure Machine Learning Engineer Nanodegree Program with Udacity.
 
+This is a follow up to an [earlier project](https://github.com/ChidiNdego/Loan-Defaulters-Prediction) on the same loan default dataset. The earlier project was completed with the traditional data science method using jupyter notebook. It was accomplished using Random Forest and Neural Network models. 
+Here, a faster and profitable cloud-based solution is provided using Microsoft Azure Machine Learning Ecosystem.  
+
 This project entails creating two machine learning models: one using AutoML and the other is a customized model whose hyperparameters are tuned using hyperdrive. The performance of both models would be compared and only the best performing model would be deployed as a web service. The model endpoint is also tested to validate its performance by sending an HTTP POST request.
 
 #### Project Workflow
@@ -135,7 +138,6 @@ The two hyperparamters used in this experiment are `C` and `max_iter`. `C` is th
 The hyperparameter search range used for `C` is [1, 2, 3, 4, 5, 6] and for `max_iter` is [50, 100, 150, 200, 250, 300].
 
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 
 The completed hyperdrive experiment is shown below: 
 
@@ -160,7 +162,6 @@ Evidently, the best run outputs an accuracy of `71.68%` with optimized hyperpara
 
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
 The results from the two models are compared:
 
@@ -236,3 +237,5 @@ Click the application insight url to see charts proving that logging has been en
 
 ![Application Insight Visuals](Images/app_insight_enabled_02.PNG)
 *figure 18: application insight visuals*
+
+### The End
