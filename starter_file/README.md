@@ -58,11 +58,11 @@ A tabular dataset must be represented correctly before use in Azure ML Studio.
 
 TabularDataset is created using methods like `azureml.data.dataset_factory.TabularDatasetFactory.from_delimited_files` from the `TabularDatasetFactory` class as shown below:
 
-`
+```
 url = "https://raw.githubusercontent.com/ChidiNdego/loan-default-capstone-project/master/starter_file/loan_default_prediction.csv"
 
 data = TabularDatasetFactory.from_delimited_files(url)
-`
+```
 
 ## Automated ML
 
