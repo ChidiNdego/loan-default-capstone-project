@@ -1,8 +1,8 @@
-Here are tips and best practices suggested by the reviewer of this project.
+Here are suggested tips and best practices for this project.
 
 
 *   Azure has provided as a good pool of options for creating data pipelines. You can explore that as well https://docs.microsoft.com/en-us/azure/machine-learning/concept-ml-pipelines
-*   Good Reference on architecture diagram https://docs.microsoft.com/en-us/azure/architecture/browse/
+*   Good Reference on architecture diagram - https://docs.microsoft.com/en-us/azure/architecture/browse/
 *   A good consolidated page from Azure on HyperDrive Experiments - https://docs.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters
 
 *   The link has good curation of publicly available data set , which you can explore for more experiments https://github.com/awesomedata/awesome-public-datasets
