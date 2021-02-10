@@ -119,7 +119,7 @@ Refer to the [automl notebook](automl.ipynb) for more detailed information.
 
 #### Suggestions for possible improvement
 
-*   Increase experiment timeout duration. This would allow for more model experimentation, but at expense of cost.
+*   Increase experiment timeout duration. This would allow for more model experimentation, but at the expense of cost.
 *   Try a different primary metric. Sometimes accuracy alone doesn't represent true picture of the model's performance. Recall or precision are more specific metrics in related classification problems.
 *   Tweak some other AutoML confirguration parameters including number of cross validation to reduce model bias.
 *   Clean data function: Values were imputed to treat missing entries. Possibly, doing away with such rows may produce a better model. 
@@ -147,7 +147,7 @@ The completed hyperdrive experiment is shown below:
 ![Completed hyperdrive experiment](Images/run_progress_02.PNG)
 *figure 4: completed hyperdrive experiment*
 
-Evidently, the best run outputs an accuracy of `71.68%` with optimized hyperparameters: `C = 2` and `max_iter = 150` as shown below:
+Evidently, the best run outputs an accuracy of `71.68%` with optimized hyperparameters: `C = 2` and `max_iter = 150` as shown below.
 
 ![Parameters of the best model](Images/best_hypdrive_model.PNG)
 *figure 5: parameters of the best hyperdrive model*
@@ -157,7 +157,7 @@ Evidently, the best run outputs an accuracy of `71.68%` with optimized hyperpara
 *   Clean data function: Values were imputed to treat missing entries. Possibly, doing away with such rows may produce a better model. 
 *   Parameter sampling can be carried out more effectively. Increase in RandomParameterSampling or start with a wide range of values for each parameter, then refine the search space.
 *   Apply other types of parameter sampling including the Bayesian Parameter Sampling. Bayesian sampling tries to intelligently pick the next sample of hyperparameters, based on how the previous samples performed, such that the new sample improves the reported primary metric.
-*   Try a different primary metric. Sometimes accuracy alone doesn't represent true picture of the model's performance. Recall or precision are more specific metrics in related classification problems where False negative is preferred over False positive.
+*   Try a different primary metric. Sometimes, accuracy alone doesn't represent true picture of the model's performance. Recall or precision are more specific metrics in related classification problems where False negative is preferred over False positive.
 *   Tweak some other hyperdrive confirguration parameters including max total runs, to try a lot more combinations.
 
 
