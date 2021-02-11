@@ -23,7 +23,7 @@ Suffice to say that the data was cleaned with the `clean` function made availabl
 
 ### Task
 
-The target column is identified as `loanDefault`, consisting of only two entries: `0` describing a defaulted loan entry and `1` implying no default; hence, a classification problem. 
+The target column is identified as `loanDefault`, consisting of only two entries: `0` describing a defaulted loan entry and `1` implying no default; hence, a binary classification problem. 
 
 #### Features and definitions
 
