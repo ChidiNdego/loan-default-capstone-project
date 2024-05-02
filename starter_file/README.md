@@ -1,7 +1,5 @@
 # Capstone Project - Loan Default Prediction
 
-This is the last of three projects required for the fulfilment of the Microsoft Azure Machine Learning Engineer Nanodegree Program with Udacity.
-
 This is a follow up to an [earlier project](https://github.com/ChidiNdego/Loan-Defaulters-Prediction) on the same loan default dataset. The earlier project was completed with the traditional data science method using jupyter notebook. It was accomplished using Random Forest and Neural Network models. 
 Here, a faster and profitable cloud-based solution is provided using Microsoft Azure Machine Learning Ecosystem.  
 
